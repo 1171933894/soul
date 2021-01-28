@@ -32,6 +32,7 @@ import java.lang.annotation.Target;
  *
  * @author sixh
  */
+// 将此注释添加到类中表示加入了扩展机制
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
