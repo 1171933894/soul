@@ -33,7 +33,7 @@ import java.io.Serializable;
 @EqualsAndHashCode
 public class MonitorConfig implements Serializable {
     
-    private String metricsName;
+    private String metricsName;// metrics：指标
     
     private String host;
     
