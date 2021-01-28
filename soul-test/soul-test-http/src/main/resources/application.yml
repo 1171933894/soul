@@ -1,15 +1,15 @@
 server:
-  port: 8187
+  port: 8188
   address: 0.0.0.0
 
 
 soul:
   http:
-    adminUrl: http://localhost:9095
-    port: 8187
-    contextPath: /http
-    appName: http
-    full: false
+    adminUrl: http://localhost:9095 # 我们之前起的soul-admin模块的ip+端口，注意要加http://
+    port: 8187 # 你本项目的启动端口
+    contextPath: /http # 设置在 Soul网关的路由前缀，例如说 /order、/product等等
+    appName: http # 应用名，不配置的话，会默认取“spring.application.name”的值
+    full: false # 设置true代表代理你的整个服务，false表示代理你其中几个controller
 
 logging:
   level:
