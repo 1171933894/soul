@@ -22,7 +22,7 @@ import org.dromara.soul.spi.SPI;
 /**
  * The interface Jdbc spi.
  */
-@SPI
+@SPI("oracle")
 public interface JdbcSPI {
     
     /**

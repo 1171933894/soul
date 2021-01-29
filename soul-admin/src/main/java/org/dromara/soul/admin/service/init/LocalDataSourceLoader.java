@@ -38,6 +38,10 @@ import org.springframework.stereotype.Component;
  *
  * @author huangxiaofeng
  */
+
+/**
+ * InstantiationAwareBeanPostProcessor接口是BeanPostProcessor的子接口，通过接口字面意思翻译该接口的作用是感知Bean实例话的处理器。实际上该接口的作用也是确实如此。
+ */
 @Component
 public class LocalDataSourceLoader implements InstantiationAwareBeanPostProcessor {
     

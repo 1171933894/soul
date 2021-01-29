@@ -33,4 +33,10 @@ public final class ExtensionLoaderTest {
         JdbcSPI jdbcSPI = ExtensionLoader.getExtensionLoader(JdbcSPI.class).getJoin("mysql");
         assertThat(jdbcSPI.getClass().getName(), is(MysqlSPI.class.getName()));
     }
+
+    @Test
+    public void testSPIWithDef() {
+        JdbcSPI jdbcSPI = ExtensionLoader.getExtensionLoader(JdbcSPI.class).getDefaultJoin();
+        System.out.println(jdbcSPI.getClassName());
+    }
 }

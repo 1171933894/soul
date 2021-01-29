@@ -93,7 +93,7 @@ public final class MetricsTrackerHandler {
             handlerCounter(metricsLabel, labelValues);
         }
     }
-    
+
     /**
      * Increment of gauge metrics tracker.
      *

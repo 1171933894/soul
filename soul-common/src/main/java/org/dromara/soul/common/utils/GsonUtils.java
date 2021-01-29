@@ -52,9 +52,9 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * @author xiaoyu(Myth)
  */
 public class GsonUtils {
-    
+
     private static final GsonUtils INSTANCE = new GsonUtils();
-    
+
     /**
      * The constant STRING.
      */
