@@ -41,10 +41,10 @@ public class PluginData implements Serializable {
 
     private String name;
 
-    private String config;
+    private String config;// 配置用的String，因为配置项要是增加就要修改表结构，用了String就方便很多
 
     private Integer role;
 
-    private Boolean enabled;
+    private Boolean enabled;// 是否开启
 
 }

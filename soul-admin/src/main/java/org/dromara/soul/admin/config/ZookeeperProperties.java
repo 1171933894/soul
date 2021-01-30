@@ -36,5 +36,5 @@ public class ZookeeperProperties {
 
     private Integer connectionTimeout;
 
-    private String serializer;
+    private String serializer;// 起名可以！！！
 }

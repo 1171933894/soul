@@ -77,7 +77,7 @@ public class HttpLongPollingDataChangedListener extends AbstractDataChangedListe
 
     private static final String X_FORWARDED_FOR_SPLIT_SYMBOL = ",";
 
-    private static final ReentrantLock LOCK = new ReentrantLock();
+    private static final ReentrantLock LOCK = new ReentrantLock();// 可重入锁
 
     /**
      * Blocked client.
