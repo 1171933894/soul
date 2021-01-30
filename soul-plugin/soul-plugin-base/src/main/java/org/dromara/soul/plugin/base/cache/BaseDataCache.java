@@ -177,7 +177,7 @@ public final class BaseDataCache {
             RULE_MAP.put(selectorId, Lists.newArrayList(ruleData));
         }
     }
-    
+
     /**
      * Remove rule data.
      *
@@ -187,7 +187,7 @@ public final class BaseDataCache {
         final List<RuleData> ruleDataList = RULE_MAP.get(ruleData.getSelectorId());
         Optional.ofNullable(ruleDataList).ifPresent(list -> list.removeIf(rule -> rule.getId().equals(ruleData.getId())));
     }
-    
+
     /**
      * Clean rule data.
      */

@@ -27,12 +27,12 @@ import org.dromara.soul.sync.data.api.MetaDataSubscriber;
  * @author xiaoyu
  */
 public class MetaDataAllSubscriber implements MetaDataSubscriber {
-    
+
     @Override
     public void onSubscribe(final MetaData metaData) {
         MetaDataCache.getInstance().cache(metaData);
     }
-    
+
     @Override
     public void unSubscribe(final MetaData metaData) {
         MetaDataCache.getInstance().remove(metaData);

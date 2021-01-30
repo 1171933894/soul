@@ -107,17 +107,17 @@ public class HttpClientProperties {
             /**
              * Elastic pool type.
              */
-            ELASTIC,
+            ELASTIC,// 有弹性
 
             /**
              * Fixed pool type.
              */
-            FIXED,
+            FIXED,// 固定
 
             /**
              * Disabled pool type.
              */
-            DISABLED
+            DISABLED// 已停用
         }
     }
 
