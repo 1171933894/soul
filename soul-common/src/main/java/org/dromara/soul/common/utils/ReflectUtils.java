@@ -38,7 +38,7 @@ public class ReflectUtils {
      * @throws SecurityException the security exception
      */
     public static Field getField(final Class<?> beanClass, final String name) throws SecurityException {
-        final Field[] fields = beanClass.getDeclaredFields();
+        final Field[] fields = beanClass.getDeclaredFields();// 获得某个类的所有声明的字段，即包括public、private和proteced，但是不包括父类的申明字段
         if (fields.length != 0) {
             for (Field field : fields) {
                 if (name.equals(field.getName())) {
