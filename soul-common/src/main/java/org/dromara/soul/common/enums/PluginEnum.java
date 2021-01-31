@@ -98,7 +98,7 @@ public enum PluginEnum {
      */
     RESPONSE(100, 0, "response");
 
-    private final int code;
+    private final int code;// 同时也是优先级
 
     private final int role;
 
