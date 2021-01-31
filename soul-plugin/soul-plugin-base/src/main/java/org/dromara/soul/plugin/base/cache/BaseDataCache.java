@@ -52,7 +52,7 @@ public final class BaseDataCache {
     
     private BaseDataCache() {
     }
-    
+
     /**
      * Gets instance.
      *
@@ -61,7 +61,7 @@ public final class BaseDataCache {
     public static BaseDataCache getInstance() {
         return INSTANCE;
     }
-    
+
     /**
      * Cache plugin data.
      *
@@ -70,7 +70,7 @@ public final class BaseDataCache {
     public void cachePluginData(final PluginData data) {
         PLUGIN_MAP.put(data.getName(), data);
     }
-    
+
     /**
      * Remove plugin data.
      *
@@ -174,7 +174,7 @@ public final class BaseDataCache {
             final List<RuleData> collect = resultList.stream().sorted(Comparator.comparing(RuleData::getSort)).collect(Collectors.toList());
             RULE_MAP.put(selectorId, collect);
         } else {
-            RULE_MAP.put(selectorId, Lists.newArrayList(ruleData));
+            RULE_MAP.put(selectorId, Lists.newArrayList(ruleData));// 你看，人家用的是Lists.newArrayList方法
         }
     }
 

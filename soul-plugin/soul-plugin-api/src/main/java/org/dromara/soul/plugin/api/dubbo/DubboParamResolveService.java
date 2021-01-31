@@ -30,6 +30,7 @@ public interface DubboParamResolveService {
     /**
      * Build parameter pair.
      * this is Resolve http body to get dubbo param.
+     * 从http的body中获取dubbo参数
      *
      * @param body           the body
      * @param parameterTypes the parameter types
