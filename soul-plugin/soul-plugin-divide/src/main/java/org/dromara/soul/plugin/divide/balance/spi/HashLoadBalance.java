@@ -43,6 +43,7 @@ public class HashLoadBalance extends AbstractLoadBalance {
     public DivideUpstream doSelect(final List<DivideUpstream> upstreamList, final String ip) {
         final ConcurrentSkipListMap<Long, DivideUpstream> treeMap = new ConcurrentSkipListMap<>();
         for (DivideUpstream address : upstreamList) {
+            // 程序跑出一个hash环来
             for (int i = 0; i < VIRTUAL_NODE_NUM; i++) {
                 long addressHash = hash("SOUL-" + address.getUpstreamUrl() + "-HASH-" + i);
                 treeMap.put(addressHash, address);
