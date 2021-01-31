@@ -72,6 +72,7 @@ public abstract class AbstractSoulPlugin implements SoulPlugin {
         if (pluginData != null && pluginData.getEnabled()) {
             final Collection<SelectorData> selectors = BaseDataCache.getInstance().obtainSelectorData(pluginName);
             if (CollectionUtils.isEmpty(selectors)) {
+                // 从这里看出，DIVIDE/DUBBO/SPRING_CLOUD三种协议都必须要求selectors不为空
                 return CheckUtils.checkSelector(pluginName, exchange, chain);
             }
             final SelectorData selectorData = matchSelector(exchange, selectors);

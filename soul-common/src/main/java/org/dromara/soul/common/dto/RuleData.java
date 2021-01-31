@@ -57,7 +57,7 @@ public class RuleData implements Serializable {
 
     private Boolean enabled;
 
-    private Boolean loged;
+    private Boolean loged;// 是否打印日志
 
     /**
      * handle message（different plugin have different handle to mark ,json style）.

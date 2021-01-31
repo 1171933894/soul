@@ -63,7 +63,7 @@ public class SelectorData implements Serializable {
 
     private Boolean enabled;
 
-    private Boolean loged;
+    private Boolean loged;// 是否打印日志的字段
 
     private Boolean continued;
 
