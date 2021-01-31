@@ -42,7 +42,7 @@ public class SoulExtConfiguration {
     @ConditionalOnMissingBean(value = SoulResult.class, search = SearchStrategy.ALL)
     public SoulResult soulResult() {
         return new DefaultSoulResult();
-    }
+    }// 注入这个普通pojo的？作用是什么呢？？？
 
     /**
      * Remote address resolver remote address resolver.

@@ -40,12 +40,12 @@ public interface SoulPlugin {
     
     /**
      * return plugin order .
-     * This attribute To determine the plugin execution order in the same type plugin.
+     * This attribute To determine（确定）the plugin execution order in the same type plugin.
      *
      * @return int order
      */
     int getOrder();
-    
+
     /**
      * acquire plugin name.
      * this is plugin name define you must Provide the right name.
@@ -56,7 +56,7 @@ public interface SoulPlugin {
     default String named() {
         return "";
     }
-    
+
     /**
      * plugin is execute.
      * if return true this plugin can not execute.
