@@ -51,6 +51,7 @@ public class RewritePlugin extends AbstractSoulPlugin {
             log.error("uri rewrite rule can not configuration：{}", handle);
             return chain.execute(exchange);
         }
+        // 重写插件只是设置了需要替换的url
         exchange.getAttributes().put(Constants.REWRITE_URI, rewriteHandle.getRewriteURI());
         return chain.execute(exchange);
     }
