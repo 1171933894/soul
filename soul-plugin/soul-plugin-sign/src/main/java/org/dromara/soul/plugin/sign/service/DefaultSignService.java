@@ -75,6 +75,7 @@ public class DefaultSignService implements SignService {
         final LocalDateTime start = DateUtils.formatLocalDateTimeFromTimestamp(Long.parseLong(soulContext.getTimestamp()));
         final LocalDateTime now = LocalDateTime.now();
         final long between = DateUtils.acquireMinutesBetween(start, now);
+        // 验签是有过期时间的
         if (between > delay) {
             return Pair.of(Boolean.FALSE, String.format(SoulResultEnum.SING_TIME_IS_TIMEOUT.getMsg(), delay));
         }

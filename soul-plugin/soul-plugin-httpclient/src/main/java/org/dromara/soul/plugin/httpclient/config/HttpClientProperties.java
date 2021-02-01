@@ -70,7 +70,7 @@ public class HttpClientProperties {
     /**
      * Enables wiretap debugging for Netty HttpClient.
      */
-    private boolean wiretap;
+    private boolean wiretap;// wiretap：窃听
     
     /**
      * The type Pool.
