@@ -19,13 +19,13 @@ public class MetaData implements Serializable {
     
     private String rpcType;
     
-    private String serviceName;
+    private String serviceName;// 接口名
     
     private String methodName;
     
     private String parameterTypes;
     
-    private String rpcExt;
+    private String rpcExt;// 扩展信息
     
     private Boolean enabled;
 }

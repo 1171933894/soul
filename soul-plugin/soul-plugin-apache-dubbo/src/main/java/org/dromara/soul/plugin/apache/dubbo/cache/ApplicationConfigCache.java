@@ -49,7 +49,7 @@ public final class ApplicationConfigCache {
     
     private RegistryConfig registryConfig;
     
-    private final int maxCount = 50000;
+    private final int maxCount = 50000;// 本地guava缓存最大对象数量
     
     private final LoadingCache<String, ReferenceConfig<GenericService>> cache = CacheBuilder.newBuilder()
             .maximumWeight(maxCount)
@@ -141,7 +141,7 @@ public final class ApplicationConfigCache {
         reference.setApplication(applicationConfig);
         reference.setRegistry(registryConfig);
         reference.setInterface(metaData.getServiceName());
-        reference.setProtocol("dubbo");
+        reference.setProtocol("dubbo");// 协议被代码固定为dubbo了
         String rpcExt = metaData.getRpcExt();
         DubboParamExtInfo dubboParamExtInfo = GsonUtils.getInstance().fromJson(rpcExt, DubboParamExtInfo.class);
         if (Objects.nonNull(dubboParamExtInfo)) {
